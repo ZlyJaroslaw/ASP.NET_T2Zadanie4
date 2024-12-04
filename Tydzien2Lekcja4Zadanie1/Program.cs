@@ -15,7 +15,7 @@ namespace SpisLudzi
             int age = 0;
             char sex = 'm';
             string pesel = "01020304056";
-            int number = 1;
+            string number = "1";
 
             Console.Write("Podaj imię: ");
             firstName = Console.ReadLine();
@@ -40,11 +40,11 @@ namespace SpisLudzi
             //    pesel = 0;
             //}
             Console.Write("Podaj numer pracownika: ");
-            string numberFromConsole = Console.ReadLine();
+            number = Console.ReadLine();
 
             Int32.TryParse(ageFromConsole, out age);
             
-            Int32.TryParse(numberFromConsole, out number);
+            //Int32.TryParse(numberFromConsole, out number);
 
             Console.WriteLine($"Imię        : {firstName}");
             Console.WriteLine($"Nazwisko    : {name}");
