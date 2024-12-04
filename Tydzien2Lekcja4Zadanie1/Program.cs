@@ -14,7 +14,7 @@ namespace SpisLudzi
             string name = "Osłowski";
             int age = 0;
             char sex = 'm';
-            long pesel = 01020304056;
+            string pesel = "01020304056";
             int number = 1;
 
             Console.Write("Podaj imię: ");
@@ -32,13 +32,13 @@ namespace SpisLudzi
                 sex = '-';
             }
             Console.Write("Podaj numer PESEL: ");
-            string peselFromConsole = Console.ReadLine();
-            Int64.TryParse(peselFromConsole, out pesel);
-            if ((pesel < 10000000) || (pesel >= 100000000000))
-            {
-                Console.WriteLine("Błąd: Błędny numer PESEL!");
-                pesel = 0;
-            }
+            pesel = Console.ReadLine();
+            //Int64.TryParse(peselFromConsole, out pesel);
+            //if ((pesel < 10000000) || (pesel >= 100000000000))
+            //{
+            //    Console.WriteLine("Błąd: Błędny numer PESEL!");
+            //    pesel = 0;
+            //}
             Console.Write("Podaj numer pracownika: ");
             string numberFromConsole = Console.ReadLine();
 
